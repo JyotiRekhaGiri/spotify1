@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"/>
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapi.com/css2?family=Montserrat:ita1,wght@0,100;0,300;0,400;0,500,0,600;0,700;0,800;0,900;1,100;
+  1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="main">
+
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="./images/Spotify-logo.svg" alt="Logo"/> 
+        </a>
+      </div>
+  
+      <div class="navigation">
+        <ul>
+          <li class="home">
+            <a href="/playlist.html">
+              <span class="fa fa-home"></span>
+             <span>Home</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+             <span>Search</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+             <span>Your Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+             <span>Creating Playlist</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fa-gratipay"></span>
+             <span>Liked Songs</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fas fa-podcast"></span>
+             <span>Your Episodes</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="navigation">
+        <div class="text">
+        <ul>
+          <li>
+            <span>FAV</span>
+          </li>
+          <li>
+            <span>Daily Mix1</span>
+          </li>
+          <li>
+            <span>Discover Weekly</span>
+          </li>
+          <li>
+            <span>Malayalam</span>
+          </li>
+          <li>
+            <span>Dance/ElectronixMix</span>
+          </li>
+          <li>
+            <span>EDM/Popular</span>
+          </li>
+        </ul>
+      </div>
+      </div>
+  
+      <div class="navigation">
+        <div class="download">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-arrow-circle-o-down"></span>
+              <span>Install App</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="right-main">
+      <div class="main-container">
+        <div class="topbar">
+          <div class="prev-next-buttons">
+            <button type="button" class="fa fas fa-chevron-left"></button>
+            <button type="button" class="fa fas fa-chevron-right"></button>
+          </div>
+  
+          <div class="navbar">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="user">
+                    <img src="./images/Ellipse 3.svg"/>
+                    <span>Angel</span>
+                    <span class="fa fa-caret-down"></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="spotify-playlists">
+          <h1>Good morning</h1>
+          <div class="cards-container">
+          <div class="card mb-3" style="max-width: 300px; background-color: rgb(90, 87, 87); color: white;font-weight: bold;">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./images/Group 1.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text" style=" align-items: center; margin-top: 1rem;">Liked Songs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 300px; background-color: rgb(90, 87, 87); color: white;font-weight: bold;">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./images/top3.svg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text" style=" align-items: center; margin-top: 1rem;">Neffex Playlist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 300px; background-color: rgb(90, 87, 87); color: white;font-weight: bold;">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./images/top2.svg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text" style=" margin-top: 1.5rem;">K/ DA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 300px; background-color: rgb(90, 87, 87); color: white;font-weight: bold;">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./images/top1.svg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text" style=" align-items: center; margin-top: 0.2rem;">Dance / Electronic Mix</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="spotify-playlists">
+          <div class="twoside">
+            <h2>Shows you might Like</h2>
+            <h4>See All</h4>
+          </div>
+          
+          <div class="list">
+            <div class="item">
+              <img src="./images/mid1.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Weekly Motivatio...</h4>
+              <p>Ben Ina Scott</p>
+            </div>
+  
+            <div class="item">
+              <img src="./images/mid2.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>MEDITATION SELF</h4>
+              <p>Ibn Hussain Aleen</p>
+            </div>
+  
+            <div class="item">
+              <img src="./images/mid3.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Words beyond act...</h4>
+              <p>Samuel Scott</p>
+            </div>
+  
+            <div class="item">
+              <img src="./images/mid4.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Alexa Show</h4>
+              <p>Adriana Tom</p>
+            </div>
+  
+            <div class="item">
+              <img src="./images/mid4.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Alexa Show</h4>
+              <p>Adriana Tom</p>
+            </div>
+            
+            <div class="item">
+              <img src="./images/mid4.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Alexa Show</h4>
+              <p>Adriana Tom</p>
+            </div>
+  
+            <div class="item">
+              <img src="./images/mid4.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Alexa Show</h4>
+              <p>Adriana Tom</p>
+            </div>
+  
+            <div class="item">
+              <img src="./images/mid4.svg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Alexa Show</h4>
+              <p>Adriana Tom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="music-player">
+      <div class="song-bar">
+          <div class="song-infos">
+              <div class="image-container">
+                  <img src="./images/Rectangle 20.svg" alt="" />
+              </div>
+              <div class="song-description">
+                  <p class="title">
+                      Dreaming On
+                  </p>
+                  <p class="artist">NEFFEX</p>
+              </div>
+          </div>
+          <div class="icons">
+              <i class="far fa-heart"></i>
+          </div>
+      </div>
+      <div class="progress-controller">
+          <div class="control-buttons">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <i class="play-pause fas fa-play"></i>
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-undo-alt"></i>
+          </div>
+          <div class="progress-container">
+              <span>2.11</span>
+              <div class="progress-bar">
+                  <div class="progress"></div>
+              </div>
+              <span>2.42</span>
+          </div>
+      </div>
+      <div class="other-features">
+        <i class="fa-solid fa-microphone"></i>
+          <i class="fas fa-list-ul"></i>
+          <i class="fas fa-desktop tvicon"></i>
+          <div class="volume-bar">
+              <i class="fas fa-volume-high"></i>
+              <div class="progress-bar">
+                  <div class="progress"></div>
+              </div>
+          </div>
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i> 
+      </div>
+  </div>
+  </div>
+  <script src="https://kit.fontawesome.com/f39369e144.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapi.com/css2?family=Montserrat:ita1,wght@0,100;0,300;0,400;0,500,0,600;0,700;0,800;0,900;1,100;
+  1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+        <div style="height:20px; margin-top: 20px; margin-bottom: 10px; margin-right: 10px;">
+          <ul>
+            <li>
+              <a>
+                <img src="./images/Spotify-logo.svg"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li style="background-color: rgb(82, 78, 78);">
+                    <a href="#">
+                        <img src="assets/Home.svg" alt="" class="white-filtered" style="color: white;">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/Search.svg" alt="" class="white-filtered">
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/YourLibrary.svg" alt="" class="gray-filtered">
+                        <span>Your Library</span>
+                    </a>
+                </li>
+                <div style="height:30px; margin-top: 2rem; margin-bottom: 1em; color: whitesmoke;" class="white-filtered">PLAYLISTS</div>
+                <li>
+                    <a href="#">
+                        <img src="assets/CreatePlaylist.svg" alt="" class="gray-filtered">
+                        <span>Create Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/Like.svg" alt="" class="gray-filtered">
+                        <span>Liked Songs</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="left-image">
+              <img src="./images/album art.svg"/>
+            </div>
+        </div>
+        <hr >
+
+        <div style="height: 20px;"></div>
+
+        <div class="current-song-cover">
+            <img src="images/song-cover.jpeg" alt="">
+        </div>
+      </div>
+
+    <div class="right">
+        <div class="playlist-header">
+            
+            <div class="playlist-content">
+                <div class="playlist-cover">
+                    <img src="./images/스크린샷 2021-03-16 오후 4.04 2.svg" alt="">
+                </div>
+                <div class="playlist-info">
+                    <div class="playlist-public">PLAYLIST</div>
+                    <div class="playlist-title">Pop Right Now</div>
+                    <div class="playlist-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, qui?</div>
+                    <div style="height: 10px;"></div>
+                    <div class="playlist-stats">
+                        <span> Spotify ·</span>
+                        <span>860,305 likes · </span>
+                        <span>100 songs, </span>
+                        <span>5 hr 5 min </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="playlist-songs-container">
+            <div class="playlist-buttons">
+                <div class="playlist-buttons-left">
+                    <div class="playlist-buttons-resume-pause">
+                        <img src="./images/thumb_play.png" alt="">
+                    </div>
+                    <div class="playlist-buttons-like">
+                        <img src="./images/heart.png" alt="" class="spotify-color">
+                    </div>
+                    <div class="playlist-buttons-three-dot">
+                        <img src="assets/ThreeDots.svg" alt="">
+                    </div>
+                </div>
+         </div>
+            <div class="playlist-songs">
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Album</th>
+                        <th>Date Added</th>
+                    </tr>
+                    <tr class="allsong">
+                    <tr class="first">
+                        <td><i class="fa fa-play" aria-hidden="true"></i></td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="images/Rectangle 9.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         <img src="./images/heart1.png" alt="" class="white-filtered"></i>
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="./images/Rectangle 20.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="./images/Rectangle 20.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="./images/Rectangle 20.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="./images/Rectangle 20.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="./images/Rectangle 20.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="song-title">
+                            <div class="song-image">
+                                <img src="./images/Rectangle 20.svg" alt="">
+                            </div>
+                            <div class="song-name-album">
+                                <div class="song-name">We're Good</div>
+                                <div class="song-artist">Dua Lipa</div>
+                            </div>
+                        </td>
+                        <td class="song-album">Future Nostalgia(The Moonlight Edition)</td>
+                        <td class="song-date-added">4일 전</td>
+                        <td class="song-duration">
+                         2:45
+                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-player sticky-bottom">
+    <div class="footer-player-left">
+        <div class="footer-player-left-song">
+            <img src="./images/Rectangle 9.svg" alt="">
+            <div >
+            <div class="footer-player-left-song-name">Hold On</div>
+            <div class="footer-player-left-song-artist">Justin Bieber</div>
+        </div>
+        </div>
+        <div class="footer-player-left-like">
+            <i class="fa-regular fa-heart" aria-hidden="true" style="height: 18px; width: 18px;"></i>
+            <img src="./images/pip@2x.png" alt="" style="height: 18px; width: 18px;"/>
+        </div>
+    </div>
+    <div class="footer-player-middle">
+        <div class="footer-player-middle-buttons">
+            <img src="./images/Vector.png" alt="1" class="white-filtered">
+            <img src="assets/Previous.svg" alt="" class="white-filtered">
+            <span class="pause-button">
+                <img src="assets/Pause.svg" alt="">
+            </span>
+            <img src="assets/Next.svg" alt="" class="gray-filtered">
+            <img src="assets/Repeat.svg" alt="" class="gray-filtered">
+        </div>
+        <div class="footer-player-middle-slider">
+            <div class="player-time">0:00</div>
+            <div class="player-slider">
+                <input min="1" max="100">
+            </div>
+            <div class="player-time">2:50</div>
+        </div>
+    </div>
+    <div class="footer-player-right">
+        <div class="footer-player-right-buttons">
+            <img src="assets/Lyrics.svg" alt="">
+            <img src="assets/Queue.svg" class="filtered-img" alt="">
+            <img src="assets/Connect to a device.svg" class="filtered-img" alt="">
+            <img src="assets/Volume.svg" class="filtered-img" alt="">
+            <div>
+                <input  style="width:90px; position: relative; top:1px; height: 8px; border-radius: 2em;">
+            </div>
+        </div>
+    </div>
+</div>
+ <!--- <div class="main">
+
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="./images/Spotify-logo.svg" alt="Logo"/> 
+        </a>
+      </div>
+  
+      <div class="navigation">
+        <ul>
+          <li class="home">
+            <a href="#">
+              <span class="fa fa-home"></span>
+             <span>Home</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+             <span>Search</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+             <span>Your Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="navigation">
+        <h6>PLAYLISTS</h6>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+             <span>Creating Playlist</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fa-gratipay"></span>
+             <span>Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+        <hr class="line">
+      </div>
+  
+      <div class="navigation">
+        <div class="download">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-arrow-circle-o-down"></span>
+              <span>Install App</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="right-main">
+      <div class="main-container">
+        <div class="topbar">
+          
+        </div>
+  
+        <div class="spotify-playlists">
+          
+        </div>
+        </div>
+
+        <div class="spotify-playlists">
+          
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="music-player">
+      <div class="song-bar">
+          <div class="song-infos">
+              <div class="image-container">
+                  <img src="./images/Rectangle 9.svg" alt="" />
+              </div>
+              <div class="song-description">
+                  <p class="title">
+                      Hold On
+                  </p>
+                  <p class="artist">Justin Bieber</p>
+              </div>
+          </div>
+          <div class="icons">
+              <i class="far fa-heart"></i>
+
+          </div>
+      </div>
+      <div class="progress-controller">
+          <div class="control-buttons">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <i class="play-pause fas fa-play"></i>
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-undo-alt"></i>
+          </div>
+          <div class="progress-container">
+              <span>0.00</span>
+              <div class="progress-bar">
+                  <div class="progress"></div>
+              </div>
+              <span>2.50</span>
+          </div>
+      </div>
+      <div class="other-features">
+          <i class="fas fa-list-ul"></i>
+          <div class="volume-bar">
+              <i class="fas fa-volume-high"></i>
+              <div class="progress-bar">
+                  <div class="progress"></div>
+              </div>
+          </div>
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i> 
+      </div>
+  </div>
+  </div>-->
+  <script src="https://kit.fontawesome.com/f39369e144.js" crossorigin="anonymous"></script>
+</body>
+</html>
